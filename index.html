@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- presentation section -->
+      <section class="presentation">
+        <div class="container">
+          <div class="img-container">
+            <img
+              class="my-image"
+              srcset="
+                ./images/home-img1-250w.png 250w,
+                ./images/home-img1-500w.png 500w
+              "
+              sizes="10vw"
+              src="./images/home-img1-250w.png"
+              alt="my image"
+            />
+          </div>
+          <h1 class="presentation-title">
+            Hi, I am John, Creative Technologist
+          </h1>
+          <p class="presentation-text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <button class="resume-btn">Download Resume</button>
+        </div>
+      </section>
+      <!-- end of presentation section -->
+      <!-- recent posts section -->
+      <section class="recent-posts">
+        <div class="container">
+          <h2 class="section-title">Recent posts</h2>
+          <article class="post">
+            <h3 class="article-post-title">
+              Making a design system from scratch
+            </h3>
+            <ul class="post__info">
+              <li class="post__info-date">12 Feb 2020</li>
+              <li class="post__info-subtitle">Design, Pattern</li>
+            </ul>
+            <p class="post-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </article>
+          <article class="post">
+            <h3 class="article-post-title">
+              Creating pixel perfect icons in Figma
+            </h3>
+            <ul class="post__info">
+              <li class="post__info-date">12 Feb 2020</li>
+              <li class="post__info-subtitle">Design, Pattern</li>
+            </ul>
+            <p class="post-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- end of recent posts section -->
+      <!-- featured works section -->
+      <section class="featured-works">
+        <div class="container">
+          <h3 class="section-title">Featured works</h3>
+          <ul class="work">
+            <li class="work__item">
+              <img
+                class="work__item-image"
+                src="./images/home-img2-340w.png"
+                alt="an image of my work"
+                srcset="
+                  ./images/home-img2-340w.png 340w,
+                  ./images/home-img2-640w.png 640w
+                "
+                sizes="80vw"
+              />
+              <h3 class="work-subtitle">Designing Dashboards</h3>
+              <p class="work-info">
+                <span class="work-info__year">2020</span>Dashboard
+              </p>
+              <p class="work-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </li>
+            <li class="work__item hidden-on-mobile">
+              <img
+                class="work__item-image"
+                src="./images/home-img2-340w.png"
+                alt="an image of my work"
+                srcset="
+                  ./images/home-img3-250w.png 250w,
+                  ./images/home-img3-500w.png 500w
+                "
+                sizes="80vw"
+              />
+              <h3 class="work-subtitle">Vibrant Portraits of 2020</h3>
+              <p class="work-info">
+                <span class="work-info__year">2018</span>Illustration
+              </p>
+              <p class="work-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </li>
+            <li class="work__item hidden-on-mobile">
+              <img
+                class="work__item-image"
+                src="./images/home-img2-340w.png"
+                alt="an image of my work"
+                srcset="
+                  ./images/home-img4-250w.png 250w,
+                  ./images/home-img4-500w.png 500w
+                "
+                sizes="80vw"
+              />
+              <h3 class="work-subtitle">36 Days of Malayalam type</h3>
+              <p class="work-info">
+                <span class="work-info__year">2018</span>Typography
+              </p>
+              <p class="work-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- end of featured works section -->
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <ul class="social-media">
+          <li class="social-media__item">
+            <a href="#" target="_blank">
+              <svg class="social-icons" width="30px" height="30px">
+                <use href="./images/icons.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a href="#" target="_blank">
+              <svg class="social-icons" width="30px" height="30px">
+                <use href="./images/icons.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a href="#" target="_blank">
+              <svg class="social-icons" width="30px" height="30px">
+                <use href="./images/icons.svg#icon-Vector-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a href="#" target="_blank">
+              <svg class="social-icons" width="30px" height="30px">
+                <use href="./images/icons.svg#icon-Linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- creating mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-header-nav__links">
+          <li>
+            <a href="./index.html" class="mobile-header-nav__links-item"
+              >Studio</a
+            >
+          </li>
+          <li>
+            <a href="./portfolio.html" class="mobile-header-nav__links-item"
+              >Portofolio</a
+            >
+          </li>
+          <li>
+            <a href="#" class="mobile-header-nav__links-item">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="mobile-contact">
+        <li>
+          <a href="tel:+12127724150" class="mobile-contact__phone"
+            >+1 212-772-4150</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="mobile-contact__mail"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-social-media">
+        <li>
+          <a class="mobile-social-media__item no-border-item">Instagram</a>
+        </li>
+        <li><a class="mobile-social-media__item">Twitter</a></li>
+        <li><a class="mobile-social-media__item">Facebook</a></li>
+        <li><a class="mobile-social-media__item">LinkedIn</a></li>
+      </ul>
+    </div>
+    <!-- end mobile menu -->
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
+</html>

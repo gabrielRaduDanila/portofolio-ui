@@ -1,0 +1,18 @@
+.page-footer {
+    background-color: var(--white-color);
+
+    .container {
+        @include displayFlex(column);
+        padding: 50px 70px;
+    }
+}
+
+.social-media {
+    @include displayFlex(raw);
+    gap: 35px;
+}
+
+.social-icons:hover {
+    fill: var(--resume-btn-bg);
+    transition: all 250ms ease-in-out;
+}
