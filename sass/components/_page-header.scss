@@ -8,3 +8,25 @@
 .menu-toggle {
     margin-left: auto;
 }
+
+.header-nav {
+    margin-left: auto;
+    gap: 33px;
+}
+
+.current-link {
+    color: var(--current-link-color);
+}
+
+.header-nav__link {
+    font-weight: 500;
+font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .page-header {
+            .container {
+                padding: 27px 60px;
+            }
+        }
+}

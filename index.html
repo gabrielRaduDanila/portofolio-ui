@@ -36,6 +36,15 @@
             ></path>
           </svg>
         </button>
+
+        <ul class="header-nav hidden-on-mobile">
+          <li class="header-nav__link current-link">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="header-nav__link"><a href="">Works</a></li>
+          <li class="header-nav__link"><a href="">Blog</a></li>
+          <li class="header-nav__link"><a href="">Contact</a></li>
+        </ul>
       </div>
     </header>
     <main>
@@ -54,50 +63,59 @@
               alt="my image"
             />
           </div>
-          <h1 class="presentation-title">
-            Hi, I am John, Creative Technologist
-          </h1>
-          <p class="presentation-text">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-          <button class="resume-btn">Download Resume</button>
+          <div class="presentation-text-container">
+            <h1 class="presentation-title">
+              Hi, I am John, Creative Technologist
+            </h1>
+            <p class="presentation-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button class="resume-btn">Download Resume</button>
+          </div>
         </div>
       </section>
       <!-- end of presentation section -->
       <!-- recent posts section -->
       <section class="recent-posts">
         <div class="container">
-          <h2 class="section-title">Recent posts</h2>
-          <article class="post">
-            <h3 class="article-post-title">
-              Making a design system from scratch
-            </h3>
-            <ul class="post__info">
-              <li class="post__info-date">12 Feb 2020</li>
-              <li class="post__info-subtitle">Design, Pattern</li>
-            </ul>
-            <p class="post-text">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
-          </article>
-          <article class="post">
-            <h3 class="article-post-title">
-              Creating pixel perfect icons in Figma
-            </h3>
-            <ul class="post__info">
-              <li class="post__info-date">12 Feb 2020</li>
-              <li class="post__info-subtitle">Design, Pattern</li>
-            </ul>
-            <p class="post-text">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
-          </article>
+          <div class="section-title-container">
+            <h2 class="section-title">Recent posts</h2>
+            <button type="button" class="view-all-btn hidden-on-mobile">
+              View all
+            </button>
+          </div>
+          <div class="articles-container">
+            <article class="post">
+              <h3 class="article-post-title">
+                Making a design system from scratch
+              </h3>
+              <ul class="post__info">
+                <li class="post__info-date">12 Feb 2020</li>
+                <li class="post__info-subtitle">Design, Pattern</li>
+              </ul>
+              <p class="post-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </article>
+            <article class="post">
+              <h3 class="article-post-title">
+                Creating pixel perfect icons in Figma
+              </h3>
+              <ul class="post__info">
+                <li class="post__info-date">12 Feb 2020</li>
+                <li class="post__info-subtitle">Design, Pattern</li>
+              </ul>
+              <p class="post-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
       <!-- end of recent posts section -->
@@ -117,15 +135,17 @@
                 "
                 sizes="80vw"
               />
-              <h3 class="work-subtitle">Designing Dashboards</h3>
-              <p class="work-info">
-                <span class="work-info__year">2020</span>Dashboard
-              </p>
-              <p class="work-text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
+              <div class="work__item-text">
+                <h3 class="work-subtitle">Designing Dashboards</h3>
+                <p class="work-info">
+                  <span class="work-info__year">2020</span>Dashboard
+                </p>
+                <p class="work-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
             </li>
             <li class="work__item hidden-on-mobile">
               <img
@@ -138,15 +158,17 @@
                 "
                 sizes="80vw"
               />
-              <h3 class="work-subtitle">Vibrant Portraits of 2020</h3>
-              <p class="work-info">
-                <span class="work-info__year">2018</span>Illustration
-              </p>
-              <p class="work-text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
+              <div class="work__item-text">
+                <h3 class="work-subtitle">Vibrant Portraits of 2020</h3>
+                <p class="work-info">
+                  <span class="work-info__year">2018</span>Illustration
+                </p>
+                <p class="work-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
             </li>
             <li class="work__item hidden-on-mobile">
               <img
@@ -159,15 +181,17 @@
                 "
                 sizes="80vw"
               />
-              <h3 class="work-subtitle">36 Days of Malayalam type</h3>
-              <p class="work-info">
-                <span class="work-info__year">2018</span>Typography
-              </p>
-              <p class="work-text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
+              <div class="work__item-text">
+                <h3 class="work-subtitle">36 Days of Malayalam type</h3>
+                <p class="work-info">
+                  <span class="work-info__year">2018</span>Typography
+                </p>
+                <p class="work-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -206,6 +230,7 @@
             </a>
           </li>
         </ul>
+        <p class="footer-text">Copyright &#169;2020 All rights reserved</p>
       </div>
     </footer>
     <!-- creating mobile menu -->
@@ -227,43 +252,22 @@
       </button>
       <nav class="mobile-menu__nav">
         <ul class="mobile-header-nav__links">
-          <li>
+          <li class="mobile-nav__links">
             <a href="./index.html" class="mobile-header-nav__links-item"
-              >Studio</a
+              >Home</a
             >
           </li>
-          <li>
-            <a href="./portfolio.html" class="mobile-header-nav__links-item"
-              >Portofolio</a
-            >
+          <li class="mobile-nav__links">
+            <a href="" class="mobile-header-nav__links-item">Works</a>
           </li>
-          <li>
-            <a href="#" class="mobile-header-nav__links-item">Contacts</a>
+          <li class="mobile-nav__links">
+            <a href="" class="mobile-header-nav__links-item">Blog</a>
+          </li>
+          <li class="mobile-nav__links">
+            <a href="" class="mobile-header-nav__links-item">Contact</a>
           </li>
         </ul>
       </nav>
-
-      <ul class="mobile-contact">
-        <li>
-          <a href="tel:+12127724150" class="mobile-contact__phone"
-            >+1 212-772-4150</a
-          >
-        </li>
-        <li>
-          <a href="mailto:info@devstudio.com" class="mobile-contact__mail"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
-
-      <ul class="mobile-social-media">
-        <li>
-          <a class="mobile-social-media__item no-border-item">Instagram</a>
-        </li>
-        <li><a class="mobile-social-media__item">Twitter</a></li>
-        <li><a class="mobile-social-media__item">Facebook</a></li>
-        <li><a class="mobile-social-media__item">LinkedIn</a></li>
-      </ul>
     </div>
     <!-- end mobile menu -->
     <script defer src="./js/mobile-menu.js"></script>
