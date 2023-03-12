@@ -39,93 +39,22 @@
         </button>
 
         <ul class="header-nav hidden-on-mobile">
-          <li class="header-nav__link current-link">
+          <li class="header-nav__link">
             <a href="./index.html">Home</a>
           </li>
-          <li class="header-nav__link"><a href="./work-page.html">Works</a></li>
+          <li class="header-nav__link current-link">
+            <a href="./work-page.html">Works</a>
+          </li>
           <li class="header-nav__link"><a href="./blog-page.html">Blog</a></li>
           <li class="header-nav__link"><a href="">Contact</a></li>
         </ul>
       </div>
     </header>
     <!-- end of page header -->
-
     <main>
-      <!-- presentation section -->
-      <section class="presentation">
+      <section class="featured-works work-page">
         <div class="container">
-          <div class="img-container">
-            <img
-              class="my-image"
-              srcset="
-                ./images/home-img1-250w.png 250w,
-                ./images/home-img1-500w.png 500w
-              "
-              sizes="10vw"
-              src="./images/home-img1-250w.png"
-              alt="my image"
-            />
-          </div>
-          <div class="presentation-text-container">
-            <h1 class="presentation-title">
-              Hi, I am John, Creative Technologist
-            </h1>
-            <p class="presentation-text">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
-            <button class="resume-btn">Download Resume</button>
-          </div>
-        </div>
-      </section>
-      <!-- end of presentation section -->
-      <!-- recent posts section -->
-      <section class="recent-posts">
-        <div class="container">
-          <div class="section-title-container">
-            <h2 class="section-title">Recent posts</h2>
-            <button type="button" class="view-all-btn hidden-on-mobile">
-              View all
-            </button>
-          </div>
-          <div class="articles-container">
-            <article class="post">
-              <h3 class="article-post-title">
-                Making a design system from scratch
-              </h3>
-              <ul class="post__info">
-                <li class="post__info-date">12 Feb 2020</li>
-                <li class="post__info-subtitle">Design, Pattern</li>
-              </ul>
-              <p class="post-text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </article>
-            <article class="post">
-              <h3 class="article-post-title">
-                Creating pixel perfect icons in Figma
-              </h3>
-              <ul class="post__info">
-                <li class="post__info-date">12 Feb 2020</li>
-                <li class="post__info-subtitle">Design, Pattern</li>
-              </ul>
-              <p class="post-text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-      <!-- end of recent posts section -->
-      <!-- featured works section -->
-      <section class="featured-works">
-        <div class="container">
-          <h3 class="section-title">Featured works</h3>
+          <h1 class="work-title">Work</h1>
           <ul class="work">
             <li class="work__item">
               <img
@@ -196,10 +125,114 @@
                 </p>
               </div>
             </li>
+            <li class="work__item hidden-on-desktop">
+              <img
+                class="work__item-image"
+                src="./images/work-page/work-img1-350w.png"
+                alt="an image of my work"
+                srcset="
+                  ./images/work-page/work-img1-350w.png 340w,
+                  ./images/work-page/work-img1-700w.png 700w
+                "
+                sizes="80vw"
+              />
+              <div class="work__item-text">
+                <h3 class="work-subtitle">Designing Landing pages</h3>
+                <p class="work-info">
+                  <span class="work-info__year">2020</span>Website
+                </p>
+                <p class="work-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </li>
+            <li class="work__item hidden-on-mobile">
+              <img
+                class="work__item-image"
+                src="./images/work-page/work-img2-250w.png"
+                alt="an image of my work"
+                srcset="
+                  ./images/work-page/work-img2-250w.png 250w,
+                  ./images/work-page/work-img2-500w.png 500w
+                "
+                sizes="80vw"
+              />
+              <div class="work__item-text">
+                <h3 class="work-subtitle">Components</h3>
+                <p class="work-info">
+                  <span class="work-info__year">2018</span>Components, Design
+                </p>
+                <p class="work-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
       <!-- end of featured works section -->
+      <!-- work detail section -->
+      <section class="work-detail">
+        <div class="container">
+          <h2 class="work-detail-title">
+            Designing Dashboards with usability in mind
+          </h2>
+          <p class="detail-info">
+            <span class="detail-info__year">2020</span>Dashboard, User
+            Experience Design
+          </p>
+          <p class="detail-text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <img
+            class="detail__item-image"
+            src="./images/work-page/work-img3-350w.png"
+            alt="an image of my work"
+            srcset="
+              ./images/work-page/work-img3-350w.png   350w,
+              ./images/work-page/work-img3-700w.png   700w,
+              ./images/work-page/work-img3-1400w.png 1400w
+            "
+            sizes="80vw"
+          />
+          <h3 class="title1">Heading 1</h3>
+          <h4 class="title2">Heading 2</h4>
+          <p class="detail-section-text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <img
+            class="detail__item-image"
+            src="./images/work-page/work-img3-350w.png"
+            alt="an image of my work"
+            srcset="
+              ./images/work-page/work-img4-350w.png   350w,
+              ./images/work-page/work-img4-700w.png   700w,
+              ./images/work-page/work-img4-1400w.png 1400w
+            "
+            sizes="80vw"
+          />
+          <img
+            class="detail__item-image"
+            src="./images/work-page/work-img3-350w.png"
+            alt="an image of my work"
+            srcset="
+              ./images/work-page/work-img5-350w.png   350w,
+              ./images/work-page/work-img5-700w.png   700w,
+              ./images/work-page/work-img5-1400w.png 1400w
+            "
+            sizes="80vw"
+          />
+        </div>
+      </section>
+      <!-- end of work detail section -->
     </main>
     <!-- footer -->
     <footer class="page-footer">
@@ -263,7 +296,9 @@
             >
           </li>
           <li class="mobile-nav__links">
-            <a href="./work-page.html" class="mobile-header-nav__links-item">Works</a>
+            <a href="./work-page.html" class="mobile-header-nav__links-item"
+              >Works</a
+            >
           </li>
           <li class="mobile-nav__links">
             <a href="./blog-page.html" class="mobile-header-nav__links-item">Blog</a>
